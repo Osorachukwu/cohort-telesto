@@ -1,6 +1,7 @@
 import React from 'react';
 import Buttons from './components/Buttons';
 import DesktopNav from './components/nav/DesktopNav';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   let myName = "Osora";
@@ -12,8 +13,8 @@ function App() {
   }
 
   return (
-    <div>
-      <DesktopNav />
+    <div className='text-black'>
+      <AppRoutes />
     </div>
   )
 }
