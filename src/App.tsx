@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import Buttons from './components/Buttons';
 import DesktopNav from './components/nav/DesktopNav';
 import AppRoutes from './routes/AppRoutes';
+
+export const TelestoConstext = createContext("");
 
 function App() {
   let myName = "Osora";
@@ -12,10 +14,17 @@ function App() {
 
   }
 
+  let themeDark = "neche"
+
+
+
   return (
-    <div className='text-black'>
-      <AppRoutes />
-    </div>
+    <TelestoConstext.Provider value={themeDark}>
+      <div className='text-black'>
+        <AppRoutes />
+      </div>
+    </TelestoConstext.Provider>
+
   )
 }
 export default App;

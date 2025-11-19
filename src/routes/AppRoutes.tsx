@@ -9,13 +9,13 @@ import Footer from '../components/Footer'
 function AppRoutes() {
   return (
     <BrowserRouter>
-    <DesktopNav />
-    <Routes>
+      <DesktopNav />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/contact' element={<Contacts />} />
         <Route path='/about' element={<About />} />
-    </Routes>
-    <Footer />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
